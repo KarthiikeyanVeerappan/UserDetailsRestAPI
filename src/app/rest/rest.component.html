@@ -1,0 +1,99 @@
+<h1 style="font-size: large;font-family: Arial, Helvetica, sans-serif; color: #369;">REST API Details!</h1>
+
+<ng-container *ngFor="let user of Users">
+<div class="panel panel-primary" style="font-size: large;font-family: Arial, Helvetica, sans-serif; color: #369;" >
+    <div class="panel-heading">
+      <h3 class="panel-title">{{user.login}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-xs-10">
+
+        <div class="row vertical-align">
+          <div class="col-xs-8">
+
+            <div class="row">
+              <div class="col-xs-6">
+                User ID
+              </div>
+              <div class="col-xs-6">
+                : {{user.id}}
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                  node_id
+                </div>
+                <div class="col-xs-6">
+                  : {{user.node_id}}
+                </div>
+              </div>
+            <div class="row">
+              <div class="col-xs-6">
+                avatar_url
+              </div>
+              <div class="col-xs-6">
+                : {{user.avatar_url}}
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                  gravatar_id
+                </div>
+                <div class="col-xs-6">
+                  : {{user.gravatar_id}}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  url
+                </div>
+                <div class="col-xs-6">
+                  : {{user.url}}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  html_url
+                </div>
+                <div class="col-xs-6">
+                  : {{user.html_url}}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  followers_url
+                </div>
+                <div class="col-xs-6">
+                  : {{user.followers_url}}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  following_url
+                </div>
+                <div class="col-xs-6">
+                  : {{user.following_url}}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  gists_url
+                </div>
+                <div class="col-xs-6">
+                  : {{user.gists_url}}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  starred_url
+                </div>
+                <div class="col-xs-6">
+                  : {{user.starred_url}}
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</ng-container>
